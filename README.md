@@ -34,5 +34,6 @@ internal class SaveASM
 
 ### Special Thanks:
 * [Kermalis](https://github.com/Kermalis/) - For KMIDI and helping me understand the inner workings of the engines
+* [CodaHighland](https://github.com/ahigerd/) - For guidance and support on the differences between C++ funcs and C# funcs, and other programming-related answers to stuff I didn't quite understand
 * YamaArashi - For writing the decompiled code of mid2agb
 * [ipatix](https://github.com/ipatix/) - For [midi2agb](https://github.com/ipatix/midi2agb/) and its improvements over the classic mid2agb

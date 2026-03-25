@@ -1,0 +1,20 @@
+{
+    "makefile.makefilePath": "/run/media/platinumlucario/Storage/source/repos/PLMIDI2VG/X-CppReferences/mid2agb/Makefile",
+    "makefile.configurations": [
+    {
+
+        "name": "Default mid2agb",
+        "makeArgs": [],
+
+        "problemMatchers": [
+
+            "$g++"
+
+        ]
+    },
+],
+"makefile.loggingLevel": "Debug",
+"makefile.extensionOutputFolder": "./.vscode",
+"makefile.extensionLog": "extension.log",
+"C_Cpp.errorSquiggles": "enabled",
+}
