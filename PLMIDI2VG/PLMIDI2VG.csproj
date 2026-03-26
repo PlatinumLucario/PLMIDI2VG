@@ -4,11 +4,48 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+    <Authors>PlatinumLucario</Authors>
+    <Copyright>PlatinumLucario</Copyright>
+    <Product>PLMIDI2VG</Product>
+    <Title>PLMIDI2VG</Title>
+    <PackageId>PLMIDI2VG</PackageId>
+    <AssemblyName>PLMIDI2VG</AssemblyName>
+    <Version>0.0.1</Version>
+    <RepositoryUrl>https://github.com/PlatinumLucario/PLMIDI2VG</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Description>This handy library can be used to convert MIDI to other video game sequence source code formats.
+
+It utilises Kermalis's [KMIDI](https://github.com/Kermalis/KMIDI/) to handle MIDI files.
+
+This library can handle the following sequence formats:
+
+## Game Boy Advance formats
+
+### Music Player 2000 (MP2K)
+
+A common sequencing format used in many Game Boy Advance games. PLMIDI2VG is equiped with a MIDI to MP2K converter, a rewrite into C# based on the [midi2agb](https://github.com/pret/pokeemerald/tree/master/tools/mid2agb) decomp code.</Description>
+    <PackageProjectUrl>https://github.com/PlatinumLucario/PLMIDI2VG</PackageProjectUrl>
+    <NeutralLanguage>en-001</NeutralLanguage>
+    <PackageTags>MIDI</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
     <!-- <ProjectReference Include="../../KMIDI/KMIDI/KMIDI.csproj" /> -->
     <PackageReference Include="KMIDI" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
