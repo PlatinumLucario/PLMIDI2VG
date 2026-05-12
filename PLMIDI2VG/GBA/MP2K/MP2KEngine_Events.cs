@@ -106,10 +106,38 @@ internal partial class MP2KEngine
 
     private static void WriteExtendedOp(MP2KEvent evt)
     {
-        // TODO (from mid2agb decomp): support for other extended commands
-
         switch (_extendedCommand)
         {
+            case 0x01:
+                {
+                    WriteOp(evt.Time, "XCMD  ", $"xWAVE , {evt.Param2}");
+                    break;
+                }
+            case 0x02:
+                {
+                    WriteOp(evt.Time, "XCMD  ", $"xTYPE , {evt.Param2}");
+                    break;
+                }
+            case 0x04:
+                {
+                    WriteOp(evt.Time, "XCMD  ", $"xATTA , {evt.Param2}");
+                    break;
+                }
+            case 0x05:
+                {
+                    WriteOp(evt.Time, "XCMD  ", $"xDECA , {evt.Param2}");
+                    break;
+                }
+            case 0x06:
+                {
+                    WriteOp(evt.Time, "XCMD  ", $"xSUST , {evt.Param2}");
+                    break;
+                }
+            case 0x07:
+                {
+                    WriteOp(evt.Time, "XCMD  ", $"xRELA , {evt.Param2}");
+                    break;
+                }
             case 0x08:
                 {
                     WriteOp(evt.Time, "XCMD  ", $"xIECV , {evt.Param2}");
@@ -118,6 +146,26 @@ internal partial class MP2KEngine
             case 0x09:
                 {
                     WriteOp(evt.Time, "XCMD  ", $"xIECL , {evt.Param2}");
+                    break;
+                }
+            case 0x0A:
+                {
+                    WriteOp(evt.Time, "XCMD  ", $"xLENG , {evt.Param2}");
+                    break;
+                }
+            case 0x0B:
+                {
+                    WriteOp(evt.Time, "XCMD  ", $"xSWEE , {evt.Param2}");
+                    break;
+                }
+            case 0x0C:
+                {
+                    WriteOp(evt.Time, "XCMD  ", $"xWAIT , {evt.Param2}");
+                    break;
+                }
+            case 0x0D:
+                {
+                    WriteOp(evt.Time, "XCMD  ", $"xSOFF , {evt.Param2}");
                     break;
                 }
             default:
